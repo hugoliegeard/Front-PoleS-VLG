@@ -5,17 +5,7 @@
  * @angular/core
  */
 import { Component } from '@angular/core';
-
-class Contact {
-  id: number;
-  name: string;
-  username: string;
-  email: string;
-  address?: object;
-  phone?: number;
-  website?: string;
-  company?: object;
-}
+import {Contact} from './shared/models/contact';
 
 /**
  * @Component est ce qu'on appel un décorateur.
