@@ -91,4 +91,10 @@ export class AppComponent {
   showContact(contactCliqueParMonUtilisateur: Contact) {
     this.contactActif = contactCliqueParMonUtilisateur;
   }
+
+
+  addContactToArray(nouveauContact: Contact) {
+    // -- Ajout du contact dans le tableau
+    this.mesContacts.push(nouveauContact);
+  }
 }

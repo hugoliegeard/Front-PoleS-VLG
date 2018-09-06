@@ -41,9 +41,11 @@ Pour débuger ma variable
         </a>
       </div>
 
-      <!--<pre>-->
-        <!--{{ mesContacts | json }}-->
-      <!--</pre>-->
+      <!--
+        $event : contient les données de notre évènement.
+        A savoir : le nouveau contact.
+      -->
+      <app-create (unContactEstCree)="addContactToArray($event)"></app-create>
       
     </div>
     <div class="col-sm-8">
